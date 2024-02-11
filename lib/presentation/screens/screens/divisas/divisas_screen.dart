@@ -72,7 +72,7 @@ class _CambioMonedasScreenState extends State<CambioMonedasScreen> {
                   _amount = double.tryParse(value) ?? 0.0;
                 });
               },
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Monto a Convertir',
                 border: OutlineInputBorder(),
               ),
@@ -85,7 +85,7 @@ class _CambioMonedasScreenState extends State<CambioMonedasScreen> {
             const SizedBox(height: 20),
             Text(
               'Resultado: $_convertedAmount $_toCurrency',
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ],
         ),
