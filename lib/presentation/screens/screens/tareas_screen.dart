@@ -3,7 +3,7 @@ import 'package:flutter_laboratorio1_programovil/presentation/screens/screens/ho
 import 'package:go_router/go_router.dart';
 
 class TareasScreen extends StatelessWidget {
-  const TareasScreen({Key? key}) : super(key: key);
+  const TareasScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
