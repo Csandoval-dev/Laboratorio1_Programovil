@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
 
@@ -30,6 +29,14 @@ class MenuDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Noticias'),
             onTap: () => GoRouter.of(context).go('/noticias'),
+          ),
+          ListTile(
+            title: const Text('Lista de Tareas'),
+            onTap: () => GoRouter.of(context).go('/tareas'),
+          ),
+          ListTile(
+            title: const Text('Cambio de Monedas'),
+            onTap: () => GoRouter.of(context).go('/divisas'),
           ),
         ],
       ),

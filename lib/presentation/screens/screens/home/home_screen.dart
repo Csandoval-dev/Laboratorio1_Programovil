@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/menu_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,21 +8,18 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Menu Principal'),
       ),
-      body: Center(
+      drawer: const MenuDrawer(), // Agregar el MenuDrawer como el drawer
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Welcome to the Home Screen',
+          children: [
+            Text(
+              'Bienvenido al Menu Principal',
+              style: TextStyle(fontSize: 24),
             ),
-            ElevatedButton(
-              onPressed: () {
-              
-              },
-              child: const Text('Go to Details'),
-            ),
+            // Aquí puedes agregar más widgets o funcionalidades según sea necesario
           ],
         ),
       ),

@@ -21,6 +21,7 @@ class NoticiasScreen extends StatelessWidget {
                 Navigator.of(context).pop();
               },
               child: const Text('Go to Home'),
+              
             ),
           ],
         ),
