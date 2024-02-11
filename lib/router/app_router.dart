@@ -1,3 +1,4 @@
+import 'package:flutter_laboratorio1_programovil/presentation/screens/screens/podcast_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_laboratorio1_programovil/presentation/screens/screens/divisas/divisas_screen.dart';
 import 'package:flutter_laboratorio1_programovil/presentation/screens/screens/home/home_screen.dart';
@@ -20,7 +21,11 @@ final GoRouter router = GoRouter(
       ),
       GoRoute(
         path: '/divisas',
-        builder: (context, state) => const CambioDivisasScreen(),
+        builder: (context, state) => const  CambioMonedasScreen(),
+      ),
+      GoRoute(
+        path: '/podcast',
+        builder: (context, state) => const PodcastPlayerScreen (),
       ),
     ],
   );
