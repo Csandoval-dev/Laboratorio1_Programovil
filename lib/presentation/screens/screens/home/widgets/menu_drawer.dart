@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+
 class MenuDrawer extends StatelessWidget {
+  const MenuDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
+          const DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
@@ -21,20 +24,12 @@ class MenuDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Home'),
+            title: const Text('Home'),
             onTap: () => GoRouter.of(context).go('/'),
           ),
           ListTile(
-            title: Text('Noticias'),
+            title: const Text('Noticias'),
             onTap: () => GoRouter.of(context).go('/noticias'),
-          ),
-          ListTile(
-            title: Text('Tareas'),
-            onTap: () => GoRouter.of(context).go('/tareas'),
-          ),
-          ListTile(
-            title: Text('Cambio de Divisas'),
-            onTap: () => GoRouter.of(context).go('/cambio_divisas'),
           ),
         ],
       ),
