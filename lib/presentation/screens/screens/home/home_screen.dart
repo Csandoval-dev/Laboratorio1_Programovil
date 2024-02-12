@@ -8,7 +8,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Menu Principal'),
+        title: const Text('Programacion Movil', textAlign: TextAlign.center),
+       backgroundColor: Colors.blue, // Color de fondo de la AppBar
+       
       ),
       drawer: const MenuDrawer(), // Agregar el MenuDrawer como el drawer
       body: const Center(
@@ -16,10 +18,10 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Bienvenido al Menu Principal',
+              '',
               style: TextStyle(fontSize: 24),
             ),
-            // Aquí puedes agregar más widgets o funcionalidades según sea necesario
+            
           ],
         ),
       ),

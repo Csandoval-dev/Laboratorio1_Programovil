@@ -12,13 +12,13 @@ class MenuDrawer extends StatelessWidget {
         children: <Widget>[
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.blueGrey,
             ),
             child: Text(
               'App Ceutec',
               style: TextStyle(
-                color: Colors.red,
-                fontSize: 24,
+                color: Colors.white,
+                fontSize: 30,
               ),
             ),
           ),
